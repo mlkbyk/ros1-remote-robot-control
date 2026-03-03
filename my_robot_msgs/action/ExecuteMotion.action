@@ -1,0 +1,9 @@
+uint8 mode
+float32 v1
+float32 v2
+---
+bool ok
+string message
+---
+float32 progress
+string state
