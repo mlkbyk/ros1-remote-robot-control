@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="robot_control_app" type="robot_control_app" name="robot_control_app" output="screen"/>
+</launch>
