@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="learning_cpp" type="commander_node" name="spin_robot_1" output="screen" />
+</launch>
