@@ -1,0 +1,13 @@
+<launch>
+  <arg name="cmd_topic" default="/cmd_vel"/>
+  <arg name="odom_topic" default="/odom"/>
+
+  <!-- Start server (with topic params) -->
+  <include file="$(find motion_server_pkg)/launch/motion_server.launch">
+    <arg name="cmd_topic" value="$(arg cmd_topic)"/>
+    <arg name="odom_topic" value="$(arg odom_topic)"/>
+  </include>
+
+  <!-- Start GUI -->
+  <include file="$(find robot_control_app)/launch/robot_control_app.launch"/>
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+  <arg name="cmd_topic" default="/cmd_vel"/>
+  <arg name="odom_topic" default="/odom"/>
+
+  <node pkg="motion_server_pkg" type="motion_server" name="motion_server" output="screen">
+    <param name="cmd_topic" value="$(arg cmd_topic)"/>
+    <param name="odom_topic" value="$(arg odom_topic)"/>
+  </node>
+</launch>
