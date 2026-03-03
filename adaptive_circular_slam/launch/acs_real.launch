@@ -1,0 +1,18 @@
+<launch>
+  <!-- without  bringup  -->
+
+  <node pkg="adaptive_circular_slam"
+        type="circle_generator_node"
+        name="acs_circle_generator"
+        output="screen"/>
+
+  <node pkg="adaptive_circular_slam"
+        type="circle_scoring_node"
+        name="acs_circle_scoring"
+        output="screen"/>
+
+  <node pkg="adaptive_circular_slam"
+        type="motion_executor_node"
+        name="acs_motion_executor"
+        output="screen"/>
+</launch>
